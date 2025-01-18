@@ -1,0 +1,21 @@
+Steps 1:Creating the Database Table For 
+storing details of users 
+Example: 
+CREATE TABLE users (email INT NOT NULL PRIMARY KEY 
+UNIQUE, username VARCHAR(50) NOT NULL UNIQUE, password 
+VARCHAR(255) NOT NULL); 
+
+Step 2: Creating the Connection with database
+$con = mysqli_connect('localhost','root',''); 
+mysqli_select_db($con,'dbfs'); 
+
+Step 3: Voice assistance using pyttsx3 
+For Example: 
+import pyttsx3 
+speak(“Welcome”) 
+
+Step 4: Create a code for validating entered details with the details 
+in database 
+For example: 
+val=conn.execute("SELECT Balance FROM datab WHERE 
+Emailid=?",(email,)).fetchone() 
